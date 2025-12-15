@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Library - Sistema de Registro</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/buttons.css">
+  <link rel="stylesheet" href="../styles/forms.css">
+  <link rel="stylesheet" href="../styles/cards.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/navbar.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar__brand">UI Library</div>
+    <ul class="navbar__menu">
+      <li>Inicio</li>
+      <li>Registro</li>
+      <li>Usuarios</li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container">
+
+    <!-- BADGE DE ESTADO -->
+    <div class="status">
+      <span class="badge badge--info">Sistema Activo</span>
+    </div>
+
+    <!-- ALERTAS -->
+    <div id="alert" class="alert hidden"></div>
+
+    <!-- TARJETA CON FORMULARIO -->
+    <section class="card">
+      <h2 class="card__title">Registro de Usuario</h2>
+      <p class="card__subtitle">
+        Complete el formulario para registrar un nuevo usuario.
+      </p>
+
+      <form id="registerForm">
+
+        <div class="form-group">
+          <label for="name">Nombre completo</label>
+          <input type="text" id="name" placeholder="Ej: Juan Pérez">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" placeholder="correo@ejemplo.com">
+        </div>
+
+        <div class="form-group">
+          <label for="role">Rol de usuario</label>
+          <select id="role">
+            <option value="">Seleccione un rol</option>
+            <option value="admin">Administrador</option>
+            <option value="user">Usuario</option>
+          </select>
+        </div>
+
+        <div class="form-group checkbox">
+          <input type="checkbox" id="terms">
+          <label for="terms">Acepto los términos y condiciones</label>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn btn--primary">
+            Registrar Usuario
+          </button>
+          <button type="reset" class="btn btn--secondary">
+            Limpiar
+          </button>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal__content card">
+      <h3>Registro Exitoso</h3>
+      <p>El usuario ha sido registrado correctamente.</p>
+
+      <div class="user-info">
+        <span class="badge badge--success">Activo</span>
+      </div>
+
+      <button id="closeModal" class="btn btn--primary">
+        Cerrar
+      </button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Actividad #5 - Biblioteca de Componentes UI</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="../scripts/app.js"></script>
+
+</body>
+</html>
