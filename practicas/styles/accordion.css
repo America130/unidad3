@@ -1,0 +1,29 @@
+.accordion {
+  max-width: 500px;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.accordion input {
+  display: none;
+}
+
+.accordion label {
+  padding: 15px;
+  display: block;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.accordion .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 15px;
+}
+
+.accordion input:checked ~ .content {
+  max-height: 200px;
+  padding: 15px;
+}

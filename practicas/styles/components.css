@@ -1,0 +1,46 @@
+/* ALERTAS */
+.alert {
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.alert--error {
+  background: #fee2e2;
+  color: var(--danger);
+}
+
+.alert--success {
+  background: #dcfce7;
+  color: var(--success);
+}
+
+.hidden {
+  display: none;
+}
+
+/* BADGES */
+.badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.badge--info {
+  background: #dbeafe;
+  color: var(--primary-dark);
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.active {
+  display: flex;
+}

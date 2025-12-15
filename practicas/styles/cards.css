@@ -1,0 +1,13 @@
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.card__subtitle {
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+}

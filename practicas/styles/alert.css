@@ -1,0 +1,9 @@
+.alert {
+  padding: 16px;
+  border-radius: var(--radius);
+  color: white;
+  margin-bottom: 12px;
+}
+
+.alert--success { background: var(--color-accent); }
+.alert--error { background: var(--color-danger); }
